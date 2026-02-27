@@ -34,6 +34,7 @@ const AwardsSection = () => {
 
   // Trigger animation
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsLoaded(true)
   }, [])
 
@@ -116,7 +117,7 @@ const AwardsSection = () => {
               
               <p className="text-sm text-gray-600 mb-4">{award.title}</p>
               
-              <h3 className={`text-2xl leading-snug font-normal text-gray-900 hover:text-blue-600 ${award.highlight }`}>
+              <h3 className={`text-2xl leading-snug font-normal text-blue-600 hover:text-blue-600 ${award.highlight }`}>
                 {award.description}
               </h3>
             </div>
@@ -133,7 +134,7 @@ const AwardsSection = () => {
 
 
     <section className="px-4 py-20">
-  <div className="max-w-7xl mx-auto rounded-[40px] p-12 md:p-24 text-center bg-gradient-to-r from-[#dcf4ff] via-white to-[#ffebd2] border border-gray-100/50 shadow-sm">
+  <div className="bg-indigo-700 shadow-xl shadow-indigo-900/20  max-w-7xl mx-auto rounded-[40px] p-12 md:p-24 text-center  border border-gray-100/50 shadow-sm">
     
     {/* Heading */}
     <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-gray-900 mb-6">
@@ -164,7 +165,7 @@ const AwardsSection = () => {
     </h2>
 
     {/* Description */}
-    <p className={`max-w-3xl mx-auto text-gray-600 text-lg md:text-xl leading-relaxed mb-10 transition-all duration-[1000ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+    <p className={`max-w-3xl mx-auto text-gray-300 text-lg md:text-xl leading-relaxed mb-10 transition-all duration-[1000ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
        style={{ transitionDelay: `${(heading3.split(" ").length + italicHeading3.split(" ").length) * 100 + 200}ms` }}
     >
       Looking to elevate your brand? We craft immersive experiences that captivate, 
