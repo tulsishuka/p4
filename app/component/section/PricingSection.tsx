@@ -35,10 +35,10 @@ const PricingSection = () => {
   ]
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 ">
       {/* 1. Section Header */}
       <div className="max-w-7xl mx-auto flex flex-col items-center mb-16">
-        <h2 className="text-[40px] md:text-[50px] font-medium text-black text-center leading-tight">
+        <h2 className="text-[40px] md:text-[50px] font-medium text-white text-center leading-tight">
           Pick the plan that <br />
           fits your <span className="font-instrument-serif italic">start-up</span>
         </h2>
