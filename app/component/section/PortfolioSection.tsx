@@ -62,12 +62,12 @@ const PortfolioSection = () => {
   const italicText = "online presence";
 
   return (
-    <section className="w-full py-20 px-6 bg-white">
+    <section className="w-full py-20 px-6 ">
       {/* Header */}
       <div className="max-w-7xl mx-auto flex flex-col items-center mb-16">
         <h2
           ref={headingRef}
-          className="text-[40px] md:text-[50px] font-medium text-black text-center leading-[1.1]"
+          className="text-[40px] md:text-[50px] font-medium text-white text-center leading-[1.1]"
         >
           {normalText.split(" ").map((word, i) => (
             <span
