@@ -1,5 +1,3 @@
-
-
 "use client"
 
 import React, { useEffect, useRef, useState } from "react"
@@ -34,7 +32,7 @@ const TeamSection = () => {
   return (
     <section ref={sectionRef} className="py-24 px-6 w-full overflow-hidden">
       {/* Heading */}
-      <h1 className="text-center text-3xl sm:text-4xl text-black max-w-xl md:text-5xl lg:text-5xl mb-16 mx-auto">
+      <h1 className="text-center text-3xl sm:text-4xl text-white max-w-xl md:text-5xl lg:text-5xl mb-16 mx-auto">
         {"Meet the creative minds behind"
           .split(" ")
           .map((word, i) => (
