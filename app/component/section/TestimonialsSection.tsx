@@ -30,7 +30,7 @@ const TestimonialsSection = () => {
         className="pt-20 pb-12 px-6 max-w-7xl mx-auto overflow-hidden"
       >
         {/* Heading */}
-        <h1 className="text-center text-3xl sm:text-4xl text-black max-w-2xl md:text-5xl lg:text-5xl mb-16 mx-auto">
+        <h1 className="text-center text-3xl sm:text-4xl text-white max-w-2xl md:text-5xl lg:text-5xl mb-16 mx-auto">
           {"What our satisfied customers are saying"
             .split(" ")
             .map((word, i) => (
@@ -156,7 +156,7 @@ const TestimonialsSection = () => {
           {/* Right Card */}
           <div
             style={{ transitionDelay: "750ms" }}
-            className={`md:col-span-2 bg-[#1b1d1e0d] rounded-[32px] p-10 md:p-5 flex flex-col justify-between
+            className={`md:col-span-2     bg-indigo-600 rounded-[32px] p-10 md:p-5 flex flex-col justify-between
               transition-all duration-[1100ms] ease-out
               ${
                 isVisible
@@ -168,7 +168,7 @@ const TestimonialsSection = () => {
               <p className="text-[12px] font-bold text-gray-400 tracking-widest uppercase mb-12">
                 Customer Stories
               </p>
-              <h2 className="text-gray-900 text-3xl md:text-5xl font-medium leading-[1.1] max-w-3xl">
+              <h2 className="text-white text-3xl md:text-5xl font-medium leading-[1.1] max-w-3xl">
                 “Awake Design Agency brought our ideas to life with exceptional creativity and precision, exceeding expectations.”
               </h2>
             </div>
