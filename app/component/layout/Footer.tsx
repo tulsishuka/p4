@@ -1,12 +1,11 @@
 import Image from 'next/image';
 const Footer = () => {
   return (
-    <footer className="bg-white pt-20 pb-10 px-6 md:px-12 ">
+    <footer className=" pt-20 pb-10 px-6 md:px-12 ">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
                     <div className="md:col-span-4">
            
-                    <Image src="HeroImage/logo.svg" alt="Logo" width={120} height={80} />
             
             <p className="text-gray-500 text-lg leading-relaxed mb-8 max-w-2xl mt-5">
               Empowering businesses with innovative solutions. Let's create something amazing together.
