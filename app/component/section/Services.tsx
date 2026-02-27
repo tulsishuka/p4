@@ -26,16 +26,16 @@ const Services = () => {
     return () => observer.disconnect();
   }, []);
 
-  const normalText = "Where innovation meets";
-  const italicText = "aesthetics";
+  const normalText = "Strategic services built for modern ";
+  const italicText = "growth";
 
   return (
-    <main className="relative flex flex-col items-center min-h-screen px-4 sm:px-6 md:px-8 py-12 sm:py-16 bg-white">
+    <main className="relative flex flex-col items-center min-h-screen px-4 sm:px-6 md:px-8 py-12 sm:py-16 ">
       
       {/* Heading */}
       <h1
         ref={headingRef}
-        className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-black font-medium font-inter-tight text-center mb-10 sm:mb-12"
+        className="text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-white font-medium font-inter-tight text-center mb-10 sm:mb-12"
       >
         {normalText.split(" ").map((word, i) => (
           <span
@@ -106,7 +106,7 @@ const Services = () => {
       </div>
 
       {/* CTA */}
-      <div className="bg-[#1b1d1e] text-white px-6 sm:px-10 md:px-14 py-8 sm:py-10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 w-full max-w-7xl mx-auto">
+      <div className="bg-indigo-600 text-white px-6 sm:px-10 md:px-14 py-8 sm:py-10 rounded-2xl flex flex-col md:flex-row justify-between items-center gap-6 md:gap-8 w-full max-w-7xl mx-auto">
         <div className="text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] text-[#fff] leading-tight text-center md:text-left">
           <p className="font-medium">See Our Work in Action.</p>
           <p>Start Your Creative Journey with Us!</p>
