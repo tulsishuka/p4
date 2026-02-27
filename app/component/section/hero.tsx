@@ -8,6 +8,7 @@ const Hero = () => {
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsLoaded(true);
 
     const handleScroll = () => {
@@ -25,8 +26,8 @@ const Hero = () => {
     });
   };
 
-  const headingText = "Building bold brands with";
-  const italicText = "thoughtful design";
+  const headingText = "Crafting digital brands with"
+  const italicText = "strategic creativity";
   const words = headingText.split(" ");
   const italicWords = italicText.split(" ");
 
@@ -89,8 +90,7 @@ const Hero = () => {
           ${isLoaded ? "opacity-100" : "opacity-0"}`}
           style={{ transitionDelay: "1200ms" }}
         >
-          At Awake, we help small startups tackle the world’s biggest challenges with tailored
-          solutions, guiding you from strategy to success in a competitive market.
+        We design and develop high-impact digital experiences that help modern brands stand out, scale faster, and convert better in today’s competitive landscape.
         </p>
 
         {/* CTA */}
