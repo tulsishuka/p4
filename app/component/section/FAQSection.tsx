@@ -37,6 +37,7 @@ const FAQSection = () => {
 
   // Trigger animation
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setIsLoaded(true)
   }, [])
 
@@ -44,7 +45,7 @@ const FAQSection = () => {
     <section className="py-24 px-6 w-full">
       {/* Heading */}
       <div className="flex flex-col items-center mb-16">
-        <h2 className="text-[40px] md:text-[50px] font-medium text-black text-center leading-tight max-w-2xl">
+        <h2 className="text-[40px] md:text-[50px] font-medium text-white text-center leading-tight max-w-2xl">
           <span className="font-inter-tight font-medium">
             {words.map((word, i) => (
               <span
@@ -92,7 +93,7 @@ const FAQSection = () => {
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
               className="w-full flex items-center justify-between p-8 text-left hover:bg-white transition-colors"
             >
-              <span className="text-[20px] md:text-[24px] font-medium text-gray-900 pr-8">
+              <span className="text-[20px] md:text-[24px] font-medium text-gray-300 pr-8">
                 {faq.question}
               </span>
               <div className={`transform transition-transform duration-300 ${openIndex === index ? 'rotate-45' : ''}`}>
